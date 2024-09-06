@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(90deg,#5f2c82,#49a09d);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: move1 1s infinite ;
+}
+.stopwatch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #120606;
+    opacity: 0.9;
+    padding: 10px 30px;
+  
+    color: white;
+    
+    border-radius: 10px;
+}
+.timerdisplay{
+    font-weight: 600;
+    font-size: 100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+.btn{
+    font-size: 40px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    
+}
+#start{
+    background: radial-gradient(circle,#9fb75e,#011205);
+}
+#reset{
+    background: radial-gradient(circle,#4b409f,#06021b);
+}
+#stop{
+    background: radial-gradient(circle,#92364a,#460303);
+}
+.head{
+    font-size: 50px;
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    background-image: linear-gradient(90deg, rgba(94,114,235,1) 0%, rgba(255,145,144,1) 56%, rgba(254,193,149,1) 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+    animation: move 1s infinite;
+}
+@keyframes move {
+    50%{
+      background-image: linear-gradient(262deg, rgba(94,114,235,1) 0%, rgba(255,145,144,1) 56%, rgba(254,193,149,1) 100%);
+    }
+  }
+  @keyframes move1 {
+    50%{
+        background: linear-gradient(270deg,#29103c,#e1a613);
+    }
+  }
+  
