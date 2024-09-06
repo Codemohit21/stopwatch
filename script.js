@@ -12,9 +12,9 @@ let msec = 0;
 let timerId = null;
 startBtn.addEventListener('click', function () {
 
-    // if (timerId !== null) {
-    //     clearInterval(timerId);
-    // }
+    if (timerId !== null) {
+        clearInterval(timerId);
+    }
     timerId = setInterval(starttime, 10);
 })
 stopBtn.addEventListener('click', function () {
